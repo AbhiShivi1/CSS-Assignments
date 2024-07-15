@@ -1,0 +1,27 @@
+body {
+    background-color: #d8da3d;
+    color: #80007e;
+    display: flex;
+    font-family: Arial, sans-serif;
+  }
+  hr {
+    border-top: #80007e dotted 1px;
+  }
+  /* Sidebar item styles */
+  .sidebar-item {
+    background-color: white;
+    color: #80007e; /* Purple */
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #000;
+    border-right-style: solid; /* Solid right border */
+    border-right-width: 15px; /* Width of right border */
+  }
+  .sidebar {
+    background-color: #d8da3d;
+    width: 200px;
+    padding: 10px;
+  }
+  .content {
+    padding: 10px;
+  }

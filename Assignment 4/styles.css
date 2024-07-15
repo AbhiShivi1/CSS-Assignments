@@ -1,0 +1,47 @@
+/* Reset default margin for body */
+body {
+  margin: 0;
+}
+
+/* Reset default margin for paragraphs */
+p {
+  margin: 0;
+}
+
+/* Styling for the first image container */
+.first-img {
+  border: 1px solid black;
+  height: 300px;
+}
+
+/* Styling for the top-cropped image */
+.top-crop {
+  height: 282px;
+  background: url("Assignment4.PNG") no-repeat top/cover;
+}
+
+/* Styling for the second image container */
+.second-img {
+  margin-top: 40px;
+  border: 2px solid black;
+  height: 300px;
+}
+
+/* Styling for the bottom-cropped image */
+.bottom-crop {
+  height: 265px;
+  background: url("Assignment4.PNG") no-repeat bottom/cover;
+}
+
+/* Styling for the third image container */
+.third-img {
+  margin: 20px 0;
+}
+
+/* Styling for the full-sized image */
+.full-img {
+  margin: 0 auto;
+  background: url("Assignment4.PNG") no-repeat center/cover;
+  height: 300px;
+  width: 500px;
+}

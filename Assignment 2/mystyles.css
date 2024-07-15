@@ -1,0 +1,65 @@
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7.5px);
+  }
+}
+body .content .box {
+  padding: 10px;
+}
+
+body {
+  background-color: #D8DA3D;
+  color: #80007E;
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+body hr {
+  border-top: #80007E dotted 1px;
+}
+body .sidebar {
+  background-color: #D8DA3D;
+  width: 200px;
+  padding: 10px;
+  /* Sidebar item styles */
+}
+body .sidebar .sidebar-item {
+  background-color: white;
+  color: #80007E; /* Purple */
+  margin: 5px 0;
+  padding: 5px;
+  border-right-style: solid; /* Solid right border */
+  border-right-width: 15px; /* Width of right border */
+}
+body .sidebar .sidebar-item.odd {
+  border-right-color: #FF7F00;
+}
+body .sidebar .sidebar-item.even {
+  border-right-color: #0000FF;
+}
+body .content {
+  padding: 10px;
+}
+body .content .box.box1 {
+  border: 1px dashed black;
+  padding: 10px;
+  text-align: left;
+}
+body .content .box.box2 {
+  border: 1px dashed red;
+  padding: 10px;
+  text-align: right;
+}
+body .content .box.box3 {
+  border: 1px dashed grey;
+  padding: 10px;
+  text-align: center;
+}
+body .content .box:hover {
+  animation: bounce 2s;
+}/*# sourceMappingURL=mystyles.css.map */

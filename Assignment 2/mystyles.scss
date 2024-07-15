@@ -1,0 +1,83 @@
+
+// Variables
+$orange: #FF7F00;
+$blue: #0000FF;
+$purple: #80007E;
+$green: #D8DA3D;
+$font-family: Arial, sans-serif;
+
+ // Mixin for box styling
+ @mixin box-style($border-color, $text-align: left) {
+  border: 1px dashed $border-color;
+  padding: 10px;
+  text-align: $text-align;
+}
+//keyframes for bounce animation
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-15px);
+  }
+  60% {
+      transform: translateY(-7.5px);
+  }
+}
+
+%base-box{
+  padding:10px;
+}
+body {
+    background-color: $green;
+    color: $purple;
+    display: flex;
+    font-family: $font-family;
+    hr {
+      border-top: $purple dotted 1px;
+    }
+    .sidebar {
+      background-color: $green;
+      width: 200px;
+      padding: 10px;
+      /* Sidebar item styles */
+  .sidebar-item {
+    background-color: white;
+    color: $purple; /* Purple */
+    margin: 5px 0;
+    padding: 5px;
+    border-right-style: solid; /* Solid right border */
+    border-right-width: 15px; /* Width of right border */
+    &.odd {
+      border-right-color: $orange;
+    }
+
+    &.even {
+      border-right-color: $blue;
+    }
+  }
+    }
+    .content {
+      padding: 10px;
+
+      .box {
+        @extend %base-box;
+        
+        &.box1 {
+          @include box-style(black);
+        }
+  
+        &.box2 {
+          @include box-style(red, right);
+        }
+  
+        &.box3 {
+          @include box-style(grey, center);
+        }
+  
+        &:hover {
+          animation: bounce 2s;
+        }
+      }
+    }
+  }
